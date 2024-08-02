@@ -1,0 +1,14 @@
+//CORS là một cơ chế cho phép nhiều tài nguyên khác nhau (fonts, Javascript, v.v…) của một trang 
+// web có thể được truy vấn từ domain khác với domain của trang đó. 
+// CORS là viết tắt của từ Cross-origin resource sharing.
+
+//Helmet là một package được viêt để giúp bạn bảo vệ ứng dụng của mình khỏi những lỗ hổng đã biết bằng
+//cách thiết lập các Http headers một cách phù hợp Thực tế thì 
+//Helmet chỉ là một tập hợp các Middleware nhỏ làm nhiệm vụ thiết lập các Http headers liên quan đến bảo mật.
+
+
+// Dotenv là một thư viện giúp quản lý các biến môi trường (environment variables) 
+// trong các dự án phần mềm, đặc biệt là các dự án web. Các biến môi trường thường được 
+// sử dụng để cấu hình ứng dụng mà không cần thay đổi mã nguồn, cho phép cùng một mã nguồn
+//  có thể chạy trong các môi trường khác nhau
+//  (phát triển, kiểm thử, sản xuất) với các cấu hình khác nhau.

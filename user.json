@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Alexander",
+    "role": "client",
+    "gender": "male",
+    "nationality": "Singapore"
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "role": "client",
+    "gender": "male",
+    "nationality": "USA"
+  }
+]

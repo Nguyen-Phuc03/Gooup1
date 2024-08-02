@@ -1,0 +1,38 @@
+Cookies
+Ưu điểm:
+    -Dễ sử dụng và hỗ trợ rộng rãi trên các trình duyệt.
+    -Có thể thiết lập hạn sử dụng để dữ liệu tồn tại trong một khoảng thời gian nhất định.
+    -Có thể lưu trữ được nhiều loại dữ liệu như chuỗi, số, JSON, ...
+Nhược điểm:
+    -Dung lượng lưu trữ hạn chế (khoảng 4KB cho mỗi domain).
+    -Dữ liệu trong cookies sẽ được gửi đi mỗi lần yêu cầu đến server, làm tăng tải cho mạng và server.
+    -Không an toàn vì dữ liệu có thể bị can thiệp bởi người dùng hoặc bị đánh cắp (do dễ dàng xem và chỉnh sửa).
+Công dụng:
+    -Dùng để lưu trữ thông tin phiên làm việc, nhận diện người dùng, giữ trạng thái đăng nhập.
+    -Khi nào nên sử dụng:
+    +Khi cần lưu trữ thông tin ngắn hạn và cần gửi thông tin với mỗi yêu cầu đến server.
+sessionStorage
+Ưu điểm:
+    -Dữ liệu chỉ tồn tại trong cửa sổ trình duyệt hiện tại và bị xóa khi cửa sổ đó đóng.
+    -Hỗ trợ lưu trữ nhiều kiểu dữ liệu và dễ sử dụng.
+Nhược điểm:
+    -Dữ liệu không thể chia sẻ giữa các cửa sổ hoặc tab trình duyệt.
+Công dụng:
+    -Lưu trữ tạm thời thông tin phiên làm việc, các bước trung gian trong quá trình sử dụng ứng dụng web.
+Khi nào nên sử dụng:
+    Khi cần lưu trữ thông tin trong suốt phiên làm việc và chỉ sử dụng trong một tab hoặc cửa sổ trình duyệt.
+    localStorage
+Ưu điểm:
+    -Dữ liệu lưu trữ vĩnh viễn trên trình duyệt trừ khi bị xóa bởi người dùng hoặc bằng cách xóa rõ ràng từ mã JavaScript.
+    -Dễ dàng lưu trữ và truy xuất các đối tượng phức tạp hơn so với cookies.
+Nhược điểm:
+    -Dữ liệu lưu trữ chỉ thuộc về domain cụ thể, không chia sẻ được với các domain khác.
+    -Cần cẩn thận với bảo mật vì dữ liệu lưu trữ tại đây có thể bị truy cập hoặc sửa đổi bởi người dùng.
+Công dụng:
+    -Lưu trữ dữ liệu cần thiết cho ứng dụng như cài đặt người dùng, lịch sử hoạt động,...
+Khi nào nên sử dụng:
+    -Khi cần lưu trữ thông tin lâu dài và chỉ trong phạm vi của một domain cụ thể.
+Lựa chọn loại lưu trữ phù hợp:
+Cookies: Sử dụng để lưu trữ thông tin ngắn hạn như thông tin phiên làm việc, đăng nhập người dùng.
+sessionStorage: Thích hợp để lưu trữ thông tin tạm thời trong suốt phiên làm việc của người dùng.
+localStorage: Sử dụng để lưu trữ dữ liệu vĩnh viễn hoặc dùng lâu dài, nhưng chỉ trong phạm vi của một domain cụ thể.

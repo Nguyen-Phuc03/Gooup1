@@ -1,0 +1,44 @@
+ Thiết kế cơ sở dữ liệu (Database design) là quá trình xác định và tổ chức cấu trúc dữ liệu trong cơ sở dữ liệu để 
+ đáp ứng các yêu cầu của hệ thống. Quá trình này bao gồm xác định các bảng, trường, ràng buộc, 
+ và quan hệ giữa chúng.
+
+
+-Để thực hiện việc thiết kế cơ sở dữ liệu chúng ta cần thực hiện các bước sau đây:
+
+ +Xác định các thành phần dữ liệu
+ +Chia nhỏ các thành phần dữ liệu ra thành các phần nhỏ nhất mà hệ thống sử dụng
+ +Xác định các bảng và các cột
+ +Xác định khóa chính, khóa ngoại và mối quan hệ
+ +Kiểm tra cấu trúc cơ sở dữ liệu được thiết kế với qui định chuẩn hóa
+
+-Relationship (Mối quan hệ): sự kết nối giữa hai bảng để xác định mối liên quan giữa các trường dữ liệu. 
+Biểu hiện ở 3 dạng sau:
++Mối quan hệ 1-1: Mỗi bảng ghi chỉ có một và một bảng tướng ứng mà thôi
++Mối quan hệ 1-n: Mối quan hệ này khá phổ biến trong cơ sở dữ liệu. 
+Trong mối quan hệ này thì 1 bảng ghi ở bảng này có thể có nhiều bảng ghi tương ứng ở bảng kia
++Mối quan hệ n-n: Trong mối quan hệ này thì 1 bảng ghi ở bảng này có thể có nhiều bảng ghi tương ứng ở bảng kia và ngược lại.
+
+-Chuẩn hóa dữ liệu là quá trình biểu diễn cơ sở dữ liệu dưới dạng chuẩn. 
+    Đây là một kỹ thuật thiết kế bảng trong cơ sở dữ liệu, 
+    chia các bảng lớn thành các bảng nhỏ hơn và liên kết chúng bằng các mối quan hệ. 
+
+2. Các dạng chuẩn hóa cơ bản
+Có 4 dạng cơ bản là dạng chuẩn: 1NF, 2NF, 3NF và BCNF. Các dạng chuẩn hóađược sắp xếp từ thấp đến cao. 
+Để chuẩn hóa 2NF thì cơ sở dữ liệu của chúng ta phải đạt chuẩn 1NF,
+tương tự nếu muốn đạt chuẩn 3NF thì phải đạt chuẩn 1 NF và 2 NF.
+Chuẩn BCNF sẽ bao gồm 3 loại chuẩn là 1NF, 2NF và 3NF.
+
+2.1 Dạng chuẩn 1NF (First Normal Form):Một bảng cơ sở dữ liệu được gọi là ở dạng chuẩn hóa dữ liệu 1NF khi toàn bộ các miền giá trị của các cột trong bảng đều 
+chỉ chứa các giá trị nguyên tử (nguyên tố) và mỗi cột chỉ chứa một giá trị từ miền.
+2.2 Dạng chuẩn 2NF (Second Normal Form)
+Một quan hệ đủ tiêu chí là dạng chuẩn hóa dữ liệu 2NF nếu quan hệ đó:
+-Là 1NF
+-Các thuộc tính không khoá phải phụ thuộc hàm đầy đủ vào khoá chính
+2.3 Dạng chuẩn 3NF (Third Nomal Form)
+Một quan hệ đủ tiêu chí là dạng chuẩn hóa dữ liệu 3NF nếu quan hệ đó:
+-Là 2NF
+-Các thuộc tính không khoá phải phụ thuộc trực tiếp vào khoá chính
+2.4 Dạng chuẩn BCNF (Boyce – Codd Normal Form)
+Một quan hệ đạt chuẩn BCNF nếu quan hệ đó:
+-Là 3NF
+-Không có thuộc tính khoá mà phụ thuộc hàm vào thuộc tính không khoá.
